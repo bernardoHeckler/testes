@@ -1,11 +1,13 @@
-import "./App.css";
+// src/App.jsx
+import { Routes, Route } from 'react-router-dom'
+import Home from './Home'
+import Sobre from './Sobre'
 
 function App() {
   return (
-    <>
-      <h1>Hello World</h1>
-    </>
-  );
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/sobre" element={<Sobre />} />
+    </Routes>
+  )
 }
-
-export default App;
