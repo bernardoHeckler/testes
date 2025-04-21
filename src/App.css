@@ -3,8 +3,14 @@ body {
   color: #fff;
   padding: 46px 16px 16px 16px;
   transition: 0.3s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 a {
   color: #fff;
 }
+
+

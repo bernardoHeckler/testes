@@ -1,104 +1,171 @@
-.container{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
-aside{
-    border: 1px solid #383838;
-    border-radius: 20px;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+aside {
+  border: 1px solid #383838;
+  border-radius: 20px;
+  width: 358px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
 }
-.canto{
-    display: flex;
-    justify-content: end;
+.canto {
+  display: flex;
+  justify-content: end;
 }
-.btn-canto{
-    display: flex;
-    width: 32px;
-    height: 24px;
-    justify-content: center;
-    border-radius: 0 20px 0 12px;
-    background-color: #ff3939;
+.btn-canto {
+  display: flex;
+  width: 32px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff3939;
+  border-radius: 0 20px 0 12px;
+  cursor: pointer;
 }
-.btn-canto > img{
-    width: 12px;
+.btn-canto > img {
+  width: 12px;
+  transition: transform 0.3s ease;
 }
 
-.content{
+.content-abaixo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  gap: 32px;
+  padding: 16px 0;
+}
+.caixaPerfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3c3c3d;
+  width: 80px;
+  height: 78px;
+  border-radius: 20px;
+}
+.caixaPerfil > img {
+  width: 60px;
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.textoLinks {
+  text-align: start;
+}
+
+.subText {
+  color: #9f9f9f;
+  text-transform: uppercase;
+}
+
+.informacoes {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.caixaDev {
+  background-color: #3c3c3d;
+  border-radius: 8px;
+  width: 60%;
+  padding: 8px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0 20px;
+}
+
+.barraLinha {
+  width: 70%;
+  height: 1px;
+  background-color: #9f9f9f;
+}
+
+.iconesSociais {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+}
+
+.canto-baixo {
+  display: flex;
+  justify-content: end;
+}
+.btn-canto-invertido {
+  display: flex;
+  width: 32px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff3939;
+  border-radius: 12px 0 20px 0;
+  cursor: pointer;
+}
+.btn-canto-invertido > img {
+  width: 12px;
+  transition: transform 0.3s ease;
+  transform: rotate(180deg);
+}
+
+/* Estilo padrão (quando mostrar=true) */
+.content-acima {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px 0;
+}
+
+/* Estilo padrão (quando mostrar=true) */
+.content-acima {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: auto;
     gap: 16px;
     padding: 16px 0;
-}
-.caixaPerfil{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #3c3c3d;
-    width: 80px;
-    height: 78px;
-    border-radius: 20px;
-}
-.caixaPerfil > img{
-    width: 60px;
-}
-
-.texto{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.textoLinks{
-    text-align: start;
-}
-
-.subText{
-    color: #9F9F9F;
-    text-transform: uppercase;
-}
-
-.informacoes{
-    display: flex;
+    transition: all 0.3s ease; /* Adiciona transição suave */
+  }
+  
+  /* Estilo compacto (quando mostrar=false) */
+  .content-acima.compacto {
     flex-direction: row;
-    gap: 10px;
-}
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 20px; /* Espaço entre foto e texto */
+    margin: 0 auto; /* Centraliza o container */
+    max-width: 90%; /* Evita que fique muito largo */
+  }
+  
+  
 
-.caixaDev{
-    background-color: #3C3C3D;
-    border-radius: 8px;
-    width: 60%;
-    padding: 8px;
-}
-
-.links{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.barraLinha{
-    width: 100%;
-    height: 1px;
-    background-color: #9F9F9F;
-}
-
-.iconesSociais{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 8px;
-    align-items: center;
-}
+  
+  .content-acima.compacto .texto {
+    align-items: flex-start; /* Alinha texto à esquerda */
+    text-align: left;
+    gap: 8px; /* Reduz espaço entre elementos */
+  }
+  
+  .content-acima.compacto .caixaDev {
+    width: auto; /* Largura automática */
+  }

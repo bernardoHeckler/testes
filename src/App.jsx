@@ -15,7 +15,6 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} /> {/* Rota 404 */}
       </Routes>
-
       {/* Menu de navegação */}
       <nav>
         <Link to="/">Home</Link> <Link to="/about">Sobre</Link>
