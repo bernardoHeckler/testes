@@ -12,6 +12,9 @@ aside {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+  background: linear-gradient(135deg, #1d1d1e 0%, #1e1e1f 100%);
+  box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+
 }
 .canto {
   display: flex;
@@ -139,33 +142,30 @@ aside {
 
 /* Estilo padrão (quando mostrar=true) */
 .content-acima {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    padding: 16px 0;
-    transition: all 0.3s ease; /* Adiciona transição suave */
-  }
-  
-  /* Estilo compacto (quando mostrar=false) */
-  .content-acima.compacto {
-    flex-direction: row;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center; /* Centraliza verticalmente */
-    gap: 20px; /* Espaço entre foto e texto */
-    margin: 0 auto; /* Centraliza o container */
-    max-width: 90%; /* Evita que fique muito largo */
-  }
-  
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 0;
+  transition: all 0.3s ease; /* Adiciona transição suave */
+}
 
-  
-  .content-acima.compacto .texto {
-    align-items: flex-start; /* Alinha texto à esquerda */
-    text-align: left;
-    gap: 8px; /* Reduz espaço entre elementos */
-  }
-  
-  .content-acima.compacto .caixaDev {
-    width: auto; /* Largura automática */
-  }
+/* Estilo compacto (quando mostrar=false) */
+.content-acima.compacto {
+  flex-direction: row;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 20px; /* Espaço entre foto e texto */
+  margin: 0 auto; /* Centraliza o container */
+  max-width: 90%; /* Evita que fique muito largo */
+}
+
+.content-acima.compacto .texto {
+  align-items: flex-start; /* Alinha texto à esquerda */
+  text-align: left;
+  gap: 8px; /* Reduz espaço entre elementos */
+}
+
+.content-acima.compacto .caixaDev {
+  width: auto; /* Largura automática */
+}

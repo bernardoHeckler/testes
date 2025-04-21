@@ -1,0 +1,32 @@
+.navbar-container {
+  position: fixed;
+  bottom: 0;
+  left: 50%; /* Move o container para o meio da tela */
+  transform: translateX(-50%); /* Corrige o posicionamento */
+  z-index: 1000;
+  width: auto; /* Largura automática baseada no conteúdo */
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #28282975;
+  border: 1px solid #383838;
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 0 16px 16px 16px;
+  height: 65px;
+  box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
+  gap: 16px;
+  min-width: 358px; /* Largura mínima */
+  padding: 0 20px; /* Espaçamento interno */
+}
+
+.textoNav {
+  color: #9f9f9f;
+}
+.textoNav:hover {
+  color: #ffc763;
+}

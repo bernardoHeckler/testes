@@ -1,10 +1,11 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 // Páginas ./pages
 import Home from "./pages/Home";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
 import "./App.css";
+import NavBar from "./components/NavBar";
 
 export default function App() {
   return (
@@ -16,9 +17,7 @@ export default function App() {
         <Route path="*" element={<NotFound />} /> {/* Rota 404 */}
       </Routes>
       {/* Menu de navegação */}
-      <nav>
-        <Link to="/">Home</Link> <Link to="/about">Sobre</Link>
-      </nav>
+      <NavBar />
     </div>
   );
 }
