@@ -2,13 +2,7 @@ body {
   background-color: #111;
   color: #fff;
   padding: 46px 16px 16px 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: auto;
-  width: 100%;
-  flex-wrap: wrap;
+  transition: 0.3s;
 }
 
 a {
