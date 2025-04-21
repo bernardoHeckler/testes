@@ -11,7 +11,7 @@ import iconeFigma from "../iconeFigma.svg";
 import iconeGitHub from "../iconeGitHub.svg";
 
 const Home = () => {
-  const [mostrar, setMostrar] = useState(true);
+  const [mostrar, setMostrar] = useState(false);
   const alterar = () => {
     setMostrar(!mostrar); // vai trocar de true para false e vice versa
   };

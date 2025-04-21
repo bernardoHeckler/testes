@@ -30,3 +30,6 @@
 .textoNav:hover {
   color: #ffc763;
 }
+.nav-link:active {
+  color: #ffc763;
+}

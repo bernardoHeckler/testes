@@ -16,7 +16,7 @@ const NavBar = () => {
           <p className="textoNav">Portfólio</p>
         </Link>
 
-        <Link to="" className="nav-link">
+        <Link to="/" className="nav-link">
           <p className="textoNav">Blog</p>
         </Link>
 
