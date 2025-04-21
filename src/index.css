@@ -1,22 +1,16 @@
-*{
-    padding: 0;margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    list-style: none;
-    scroll-behavior: smooth;
-    scroll-padding-top: 2rem;
-    border: none;
-    outline: none;
-    transition: .3s;
-    cursor: pointer;
-    user-select: none
-}
-body{
-    background: #383838;
-    color: #ffffff;
-}
-a{
-    color: #12bcff;
-    font-weight: 500;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 2rem;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
 }
