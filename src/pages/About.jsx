@@ -1,5 +1,11 @@
 import React from "react";
 import "./About.css";
+import IconeDev from "../iconeDev.svg";
+import IconeMais from "../iconeMais.svg";
+import IconeHtml from "../iconeHtml.svg";
+import IconeCss from "../iconeCss.svg";
+import IconeJs from "../iconeJavaScript.svg";
+import IconeReact from "../iconeReact.svg";
 
 const About = () => {
   return (
@@ -17,49 +23,13 @@ const About = () => {
             </p>
           </div>
           <div className="linha">
-            <h1>O Que Estou Fazendo</h1>
+            <h2>O Que Estou Fazendo</h2>
             <div className="coluna">
               <section className="informacao">
                 <div className="conteudo">
-                  <img src="#" alt="icone" />
+                  <img src={IconeDev} alt="icone" />
                   <div className="text">
-                    <h2>Web Design</h2>
-                    <p className="descricao">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Error nesciunt possimus perferendis dolores, re
-                    </p>
-                  </div>
-                </div>
-              </section>
-              <section className="informacao">
-                <div className="conteudo">
-                  <img src="#" alt="icone" />
-                  <div className="text">
-                    <h2>Web Design</h2>
-                    <p className="descricao">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Error nesciunt possimus perferendis dolores, re
-                    </p>
-                  </div>
-                </div>
-              </section>
-              <section className="informacao">
-                <div className="conteudo">
-                  <img src="#" alt="icone" />
-                  <div className="text">
-                    <h2>Web Design</h2>
-                    <p className="descricao">
-                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                      Error nesciunt possimus perferendis dolores, re
-                    </p>
-                  </div>
-                </div>
-              </section>
-              <section className="informacao">
-                <div className="conteudo">
-                  <img src="#" alt="icone" />
-                  <div className="text">
-                    <h2>Web Design</h2>
+                    <h3>Web Design</h3>
                     <p className="descricao">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       Error nesciunt possimus perferendis dolores, re
@@ -70,12 +40,12 @@ const About = () => {
             </div>
           </div>
           <div className="linha">
-            <h1>Futuras Ideias</h1>
+            <h2>Futuras Ideias</h2>
             <div className="coluna">
               <section className="informacao">
                 <div className="blocos">
                   <div className="blocoMaior">
-                    <img src="#" alt="Algo" />
+                    <img src={IconeMais} alt="Algo" />
                   </div>
                   <div className="retangulos">
                     <div className="forma1"></div>
@@ -87,7 +57,7 @@ const About = () => {
               <section className="informacao">
                 <div className="blocos">
                   <div className="blocoMaior">
-                    <img src="#" alt="Algo" />
+                    <img src={IconeMais} alt="Algo" />
                   </div>
                   <div className="retangulos">
                     <div className="forma1"></div>
@@ -99,12 +69,12 @@ const About = () => {
             </div>
           </div>
           <div className="linha">
-            <h1>Tecnologias</h1>
+            <h2>Tecnologias</h2>
             <div className="coluna">
-              <img src="#" alt="technology" />
-              <img src="#" alt="technology" />
-              <img src="#" alt="technology" />
-              <img src="#" alt="technology" />
+              <img className="tecnologiasImg" src={IconeHtml} alt="HTML" />
+              <img className="tecnologiasImg" src={IconeJs} alt="JAVASCRIPT" />
+              <img className="tecnologiasImg" src={IconeCss} alt="CSS" />
+              <img className="tecnologiasImg" src={IconeReact} alt="REACT" />
             </div>
           </div>
         </section>
