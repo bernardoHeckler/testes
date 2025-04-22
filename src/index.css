@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
-  list-style: none;
   scroll-behavior: smooth;
   scroll-padding-top: 2rem;
   border: none;
@@ -12,5 +11,4 @@
   transition: 0.3s;
   cursor: pointer;
   user-select: none;
-  text-decoration: none;
 }

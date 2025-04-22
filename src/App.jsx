@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 // Páginas ./pages
 import Card from "./components/Card";
 import SobreMim from "./pages/SobreMim";
+import Carreira from "./pages/Carreira";
 import NotFound from "./pages/NotFound";
 import "./App.css";
 import NavBar from "./components/NavBar";
@@ -14,6 +15,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Card />} />
         <Route path="/sobreMim" element={<SobreMim />} />
+        <Route path="/carreira" element={<Carreira />} />
         <Route path="*" element={<NotFound />} /> {/* Rota 404 */}
       </Routes>
       {/* Menu de navegação */}
