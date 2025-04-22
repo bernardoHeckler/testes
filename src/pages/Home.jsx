@@ -29,7 +29,11 @@ const Home = () => {
         )}
         <div className={`content-acima ${!mostrar ? "compacto" : ""}`}>
           <div className={`caixaPerfil ${mostrar ? "expandido" : ""}`}>
-            <img className={`tamanhoFoto ${mostrar ? "expandido" : ""}`} src={logo} alt="Foto perfil" />
+            <img
+              className={`tamanhoFoto ${mostrar ? "expandido" : ""}`}
+              src={logo}
+              alt="Foto perfil"
+            />
           </div>
           <div className="texto">
             <h1>Bernardo Heckler</h1>
@@ -68,7 +72,7 @@ const Home = () => {
                   </div>
                   <div className="textoLinks">
                     <p className="subText">Programmig Since</p>
-                    <p>1/10/2022</p>
+                    <p>1/11/2022</p>
                   </div>
                 </div>
                 <div className="informacoes">
@@ -83,9 +87,27 @@ const Home = () => {
               </div>
               <div className="barraLinha"></div>
               <div className="iconesSociais">
-                <img src={iconeX} alt="icone Twitter" />
-                <img src={iconeFigma} alt="icone Figma" />
-                <img src={iconeGitHub} alt="icone Git Hub" />
+                <a
+                  href="https://x.com/bhcklr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={iconeX} alt="Meu Twitter" />
+                </a>
+                <a
+                  href="https://www.figma.com/proto/P0Y51G1NX5v0McdR0160v0/apple-design-portfolio?page-id=23%3A1095&node-id=54-716&p=f&viewport=741%2C260%2C0.35&t=5K9qyUGlczwvKwLV-1&scaling=scale-down-width&content-scaling=fixed"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={iconeFigma} alt="Meu Figma" />
+                </a>
+                <a
+                  href="https://github.com/bernardoHeckler/testes"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={iconeGitHub} alt="Meu Git Hub" />
+                </a>
               </div>
             </div>
             <div className="canto-baixo">

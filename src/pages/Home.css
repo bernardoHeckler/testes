@@ -3,6 +3,7 @@
   height: auto;
   display: flex;
   flex-direction: column;
+  margin-bottom: 81px;
 }
 aside {
   border: 1px solid #383838;
@@ -191,12 +192,12 @@ aside {
   transform: translateY(-3px);
 }
 
-.iconesSociais img {
+.iconesSociais a img {
   transition: all 0.3s ease;
   filter: grayscale(30%);
 }
 
-.iconesSociais img:hover {
+.iconesSociais a img:hover {
   transform: translateY(-3px);
   filter: grayscale(0%);
 }
