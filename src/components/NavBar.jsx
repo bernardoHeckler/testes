@@ -6,21 +6,19 @@ const NavBar = () => {
   return (
     <div className="navbar-container">
       <nav className="navbar">
-        <Link to="/sobreMim" className="nav-link">
+        <Link to="/#/sobreMim" className="nav-link">
           <p className="textoNav">Sobre</p>
         </Link>
-        <Link to="/carreira" className="nav-link">
+        <Link to="/#/carreira" className="nav-link">
           <p className="textoNav">Carreira</p>
         </Link>
-        <Link to="/portfolio" className="nav-link">
+        <Link to="/#/portfolio" className="nav-link">
           <p className="textoNav">Portfólio</p>
         </Link>
-
-        <Link to="/blog" className="nav-link">
+        <Link to="/#/blog" className="nav-link">
           <p className="textoNav">Blog</p>
         </Link>
-
-        <Link to="/contato" className="nav-link">
+        <Link to="/#/contato" className="nav-link">
           <p className="textoNav">Contato</p>
         </Link>
       </nav>
