@@ -6,10 +6,12 @@ import IconeHtml from "../iconeHtml.svg";
 import IconeCss from "../iconeCss.svg";
 import IconeJs from "../iconeJavaScript.svg";
 import IconeReact from "../iconeReact.svg";
+import Home from "./Home";
 
 const About = () => {
   return (
     <div>
+      <Home />
       <main>
         <section className="SobreMim">
           <div className="linha">

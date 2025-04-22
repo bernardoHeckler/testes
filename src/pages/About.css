@@ -3,6 +3,7 @@ main {
   height: auto;
   display: flex;
   flex-direction: row;
+  margin-bottom: 81px;
 }
 
 section.SobreMim {
