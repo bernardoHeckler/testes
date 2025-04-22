@@ -1,5 +1,5 @@
 import React, { useState } from "react"; // Importe o useState
-import "./Home.css";
+import "./Card.css";
 import setinha from "../setinha.svg";
 import logo from "../logo.svg";
 import emailSvg from "../iconeEmail.svg";
@@ -10,7 +10,7 @@ import iconeX from "../iconeTwitter.svg";
 import iconeFigma from "../iconeFigma.svg";
 import iconeGitHub from "../iconeGitHub.svg";
 
-const Home = () => {
+const Card = () => {
   const [mostrar, setMostrar] = useState(false);
   const alterar = () => {
     setMostrar(!mostrar); // vai trocar de true para false e vice versa
@@ -122,4 +122,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Card;

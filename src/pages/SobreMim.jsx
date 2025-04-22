@@ -1,17 +1,17 @@
 import React from "react";
-import "./About.css";
+import "./SobreMim.css";
 import IconeDev from "../iconeDev.svg";
 import IconeMais from "../iconeMais.svg";
 import IconeHtml from "../iconeHtml.svg";
 import IconeCss from "../iconeCss.svg";
 import IconeJs from "../iconeJavaScript.svg";
 import IconeReact from "../iconeReact.svg";
-import Home from "./Home";
+import Card from "../components/Card";
 
-const About = () => {
+const SobreMim = () => {
   return (
     <div>
-      <Home />
+      <Card />
       <main>
         <section className="SobreMim">
           <div className="linha">
@@ -85,4 +85,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default SobreMim;

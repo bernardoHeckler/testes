@@ -1,26 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./NavBar.css"; // Arquivo CSS que vamos criar
+import "./NavBar.css";
 
 const NavBar = () => {
   return (
     <div className="navbar-container">
       <nav className="navbar">
-        <Link to="/about" className="nav-link">
+        <Link to="/sobreMim" className="nav-link">
           <p className="textoNav">Sobre</p>
         </Link>
-        <Link to="/" className="nav-link">
+        <Link to="/carreira" className="nav-link">
           <p className="textoNav">Carreira</p>
         </Link>
-        <Link to="/" className="nav-link">
+        <Link to="/portfolio" className="nav-link">
           <p className="textoNav">Portfólio</p>
         </Link>
 
-        <Link to="/" className="nav-link">
+        <Link to="/blog" className="nav-link">
           <p className="textoNav">Blog</p>
         </Link>
 
-        <Link to="/" className="nav-link">
+        <Link to="/contato" className="nav-link">
           <p className="textoNav">Contato</p>
         </Link>
       </nav>
