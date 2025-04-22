@@ -28,8 +28,8 @@ const Home = () => {
           </div>
         )}
         <div className={`content-acima ${!mostrar ? "compacto" : ""}`}>
-          <div className="caixaPerfil">
-            <img src={logo} alt="Foto perfil" />
+          <div className={`caixaPerfil ${mostrar ? "expandido" : ""}`}>
+            <img className={`tamanhoFoto ${mostrar ? "expandido" : ""}`} src={logo} alt="Foto perfil" />
           </div>
           <div className="texto">
             <h1>Bernardo Heckler</h1>
