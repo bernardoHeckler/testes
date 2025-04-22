@@ -9,6 +9,7 @@ import IconeLocal from "../iconeLocal.svg";
 import iconeX from "../iconeTwitter.svg";
 import iconeFigma from "../iconeFigma.svg";
 import iconeGitHub from "../iconeGitHub.svg";
+import About from "./About";
 
 const Home = () => {
   const [mostrar, setMostrar] = useState(false);
@@ -118,6 +119,7 @@ const Home = () => {
           </>
         )}
       </aside>
+      <About />
     </div>
   );
 };
