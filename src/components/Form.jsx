@@ -10,7 +10,7 @@ const Form = () => {
       </div>
       <div className="coluna">
         <form
-          action="https://formsubmit.co/bernaheckler1@gmail.com"
+          action="https://formsubmit.co/a598b021463663bcf2a697af4b0095d6"
           method="POST"
         >
           <input type="hidden" name="_captcha" value="false" />
