@@ -1,0 +1,72 @@
+.container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+.coluna {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  height: auto;
+}
+input,
+textarea {
+  height: 55px;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: #1e1e1f;
+  border: 1px solid #383838;
+  color: #9f9f9f;
+}
+textarea {
+  height: 122px;
+}
+
+.contato-section > .container > .linha {
+  align-items: center;
+}
+
+.btn-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  height: 55px;
+  border-radius: 10px;
+  background: radial-gradient(circle at 0% 100%, #383838, #202022);
+  border: 1px solid #383838;
+  border: 1px solid #383838;
+  color: #fcce68;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 1s;
+}
+.btn-form:hover {
+  background: radial-gradient(circle at 0% 100%, #383838, #202022);
+  border: 1px solid #fcce68;
+  color: #fcce68;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 1s;
+}
