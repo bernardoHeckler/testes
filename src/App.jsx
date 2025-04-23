@@ -15,7 +15,6 @@ export default function App() {
         <NavBar />
         {/* Configuração de rotas */}
         <Routes>
-          <Route index element={<Card />} />
           <Route path="/" element={<Card />} />
           <Route path="/sobreMim" element={<SobreMim />} />
           <Route path="/carreira" element={<Carreira />} />
