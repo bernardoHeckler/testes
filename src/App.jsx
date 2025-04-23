@@ -7,6 +7,7 @@ import Carreira from "./pages/Carreira";
 import NotFound from "./pages/NotFound";
 import "./App.css";
 import NavBar from "./components/NavBar";
+import Blog from "./pages/Blog";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Route path="/" element={<Card />} />
         <Route path="/sobreMim" element={<SobreMim />} />
         <Route path="/carreira" element={<Carreira />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="*" element={<NotFound />} /> {/* Rota 404 */}
       </Routes>
       {/* Menu de navegação */}
