@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "../components/Card";
+import CarreiraData from "../data/CarreiraData";
 import "./Carreira.css";
 import IconeImg from "../iconeImg.svg";
 
@@ -10,65 +11,43 @@ const Carreira = () => {
       <main className="career-container">
         <section className="career-section">
           <div className="linha-carreira">
-            <h1>Carreira</h1>
+            <h1>{CarreiraData.titulo}</h1>
             <div className="barra"></div>
           </div>
+          
+          {/* Seção Educação */}
           <div className="section-header">
             <div className="icon-wrapper">
               <img src={IconeImg} alt="icone" className="section-icon" />
             </div>
-            <h3 className="section-title">Educação</h3>
+            <h3 className="section-title">{CarreiraData.educacao.titulo}</h3>
           </div>
 
           <ol className="timeline-list">
-            <li className="timeline-item">
-              <h4 className="item-title">Atitus Educação</h4>
-              <span className="item-period">2024 — 2028</span>
-              <p className="item-description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
-                quibusdam deleniti expedita maiores tempore quas repellat
-                asperiores voluptatum. Provident sed quas officia voluptatibus!
-                Molestias dolorum ipsam blanditiis? At, obcaecati dolore.
-              </p>
-            </li>
-            <li className="timeline-item">
-              <h4 className="item-title">Senac RS</h4>
-              <span className="item-period">2022 — 2023</span>
-              <p className="item-description">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
-                quibusdam deleniti expedita maiores tempore quas repellat
-                asperiores voluptatum. Provident sed quas officia voluptatibus!
-                Molestias dolorum ipsam blanditiis.
-              </p>
-            </li>
+            {CarreiraData.educacao.itens.map((item) => (
+              <li key={item.id} className="timeline-item">
+                <h4 className="item-title">{item.instituicao}</h4>
+                <span className="item-period">{item.periodo}</span>
+                <p className="item-description">{item.descricao}</p>
+              </li>
+            ))}
           </ol>
+          
+          {/* Seção Habilidades */}
           <div className="linha">
-            <h2>Minhas Habilidades</h2>
+            <h2>{CarreiraData.habilidades.titulo}</h2>
             <section className="informacao">
-              <div className="skill">
-                <h3>Web Design <span>80%</span></h3>
-                <div className="barra-interativa">
-                  <div id="barra1-porcento"></div>
+              {CarreiraData.habilidades.itens.map((habilidade) => (
+                <div key={habilidade.id} className="skill">
+                  <h3>{habilidade.nome} <span>{habilidade.porcentagem}%</span></h3>
+                  <div className="barra-interativa">
+                    <div 
+                      id={habilidade.idBarra}
+                      style={{ width: `${habilidade.porcentagem}%` }}
+                    ></div>
+                  </div>
                 </div>
-              </div>
-              <div className="skill">
-                <h3>Branding <span>90%</span></h3>
-                <div className="barra-interativa">
-                  <div id="barra2-porcento"></div>
-                </div>
-              </div>
-              <div className="skill">
-                <h3>WordPress <span>40%</span></h3>
-                <div className="barra-interativa">
-                  <div id="barra3-porcento"></div>
-                </div>
-              </div>
-              <div className="skill">
-                <h3>Graphic Design <span>70%</span></h3>
-                <div className="barra-interativa">
-                  <div id="barra4-porcento"></div>
-                </div>
-              </div>
+              ))}
             </section>
           </div>
         </section>
