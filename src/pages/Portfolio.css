@@ -74,3 +74,11 @@
   align-items: center;
   gap: 32px;
 }
+.nome-projeto{
+    font-size: 18px;
+    font-weight: 700;
+}
+.tipo-projeto{
+    font-size: 15px;
+    font-weight: 100;
+}
