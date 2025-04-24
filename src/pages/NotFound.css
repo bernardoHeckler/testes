@@ -1,0 +1,9 @@
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh; /* Ocupa a altura da tela */
+  font-family: sans-serif;
+  text-align: center;
+}

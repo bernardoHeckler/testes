@@ -4,7 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Card from "./components/Card";
 import SobreMim from "./pages/SobreMim";
 import Carreira from "./pages/Carreira";
-import NotFound from "./pages/NotFound";
+import NotFound from "./pages/NotFound"; // Importe o NotFound
 import "./App.css";
 import NavBar from "./components/NavBar";
 import Blog from "./pages/Blog";

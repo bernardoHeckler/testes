@@ -1,9 +1,13 @@
-import React from "react";
+import React from 'react';
+import './NotFound.css'; // Você pode criar um arquivo CSS para estilizar
 
 const NotFound = () => {
   return (
-    <div>
-      <h1>404</h1>
+    <div className="not-found-container">
+      <h1>404 - Página Não Encontrada</h1>
+      <p>Desculpe, a página que você está procurando não existe.</p>
+      {/* Você pode adicionar um link para a página inicial */}
+      <a href="/">Voltar para a Página Inicial</a>
     </div>
   );
 };
