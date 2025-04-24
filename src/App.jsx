@@ -9,6 +9,7 @@ import "./App.css";
 import NavBar from "./components/NavBar";
 import Blog from "./pages/Blog";
 import Contato from "./pages/Contato";
+import Portfolio from "./pages/Portfolio";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Route path="/" element={<Card />} />
         <Route path="/sobreMim" element={<SobreMim />} />
         <Route path="/carreira" element={<Carreira />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contato" element={<Contato />} />
         <Route path="*" element={<NotFound />} /> {/* Rota 404 */}
