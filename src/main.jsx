@@ -1,13 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import { HashRouter } from 'react-router-dom';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import { BrowserRouter } from 'react-router-dom'
 import './index.css';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <HashRouter basename="/testes">  {/* Use HashRouter */}
+    <BrowserRouter basename="/testes">
       <App />
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>
 )
