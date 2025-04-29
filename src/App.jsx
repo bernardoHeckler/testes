@@ -1,31 +1,48 @@
-import { Routes, Route } from "react-router-dom";
+// App.jsx
+import React, { useState, useEffect } from "react";
+import "./App.css";
 
-// Páginas ./pages
 import Card from "./components/Card";
+import NavBar from "./components/NavBar";
+
 import SobreMim from "./pages/SobreMim";
 import Carreira from "./pages/Carreira";
-import NotFound from "./pages/NotFound"; // Importe o NotFound
-import "./App.css";
-import NavBar from "./components/NavBar";
+import Portfolio from "./pages/Portfolio";
 import Blog from "./pages/Blog";
 import Contato from "./pages/Contato";
-import Portfolio from "./pages/Portfolio";
 
 export default function App() {
+  const [sessaoAtiva, setSessaoAtiva] = useState(() => {
+    const sessaoSalvada = localStorage.getItem("sessaoDoSiteAtiva");
+    return sessaoSalvada ? sessaoSalvada : "card";
+  });
+
+  useEffect(() => {
+    localStorage.setItem("sessaoDoSiteAtiva", sessaoAtiva);
+  }, [sessaoAtiva]);
+
+  const sessaoRenderizada = () => {
+    switch (sessaoAtiva) {
+      case "sobreMim":
+        return <SobreMim />;
+      case "carreira":
+        return <Carreira />;
+      case "portfolio":
+        return <Portfolio />;
+      case "blog":
+        return <Blog />;
+      case "contato":
+        return <Contato />;
+      case "card":
+      default:
+        return <Card />;
+    }
+  };
+
   return (
     <div className="app">
-      {/* Configuração de rotas */}
-      <Routes>
-        <Route path="/" element={<Card />} />
-        <Route path="/sobreMim" element={<SobreMim />} />
-        <Route path="/carreira" element={<Carreira />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/contato" element={<Contato />} />
-        <Route path="*" element={<NotFound />} /> {/* Rota 404 */}
-      </Routes>
-      {/* Menu de navegação */}
-      <NavBar />
+      {sessaoRenderizada()}
+      <NavBar setSessaoAtiva={setSessaoAtiva} />
     </div>
   );
 }

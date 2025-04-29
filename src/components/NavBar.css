@@ -20,16 +20,20 @@
   height: 65px;
   box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
   gap: 16px;
-  min-width: 358px; /* Largura mínima */
+  width: 358px; /* Largura mínima */
   padding: 0 20px; /* Espaçamento interno */
 }
 
-.textoNav {
+.nav-link {
+  background-color: transparent;
   color: #ffffffd7;
 }
-.textoNav:hover {
+.nav-link:hover {
   color: #ffc763;
 }
 .nav-link:active {
   color: #ffc763;
+}
+.textoNav {
+  font-size: 16px;
 }

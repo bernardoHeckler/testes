@@ -1,28 +1,29 @@
+// NavBar.jsx
 import React from "react";
-import { Link } from "react-router-dom";
 import "./NavBar.css";
 
-const NavBar = () => {
+const NavBar = ({ setSessaoAtiva }) => {
   return (
     <div className="navbar-container">
       <nav className="navbar">
-        <Link to="/sobreMim" className="nav-link">
+        <button onClick={() => setSessaoAtiva("sobreMim")} className="nav-link">
           <p className="textoNav">Sobre</p>
-        </Link>
-        <Link to="/carreira" className="nav-link">
+        </button>
+        <button onClick={() => setSessaoAtiva("carreira")} className="nav-link">
           <p className="textoNav">Carreira</p>
-        </Link>
-        <Link to="/portfolio" className="nav-link">
+        </button>
+        <button
+          onClick={() => setSessaoAtiva("portfolio")}
+          className="nav-link"
+        >
           <p className="textoNav">Portfólio</p>
-        </Link>
-
-        <Link to="/blog" className="nav-link">
+        </button>
+        <button onClick={() => setSessaoAtiva("blog")} className="nav-link">
           <p className="textoNav">Blog</p>
-        </Link>
-
-        <Link to="/contato" className="nav-link">
+        </button>
+        <button onClick={() => setSessaoAtiva("contato")} className="nav-link">
           <p className="textoNav">Contato</p>
-        </Link>
+        </button>
       </nav>
     </div>
   );
