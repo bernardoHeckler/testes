@@ -1,10 +1,10 @@
 .navbar-container {
   position: fixed;
   bottom: 0;
-  left: 50%; /* Move o container para o meio da tela */
-  transform: translateX(-50%); /* Corrige o posicionamento */
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1000;
-  width: auto; /* Largura automática baseada no conteúdo */
+  width: auto;
 }
 
 .navbar {
@@ -20,20 +20,30 @@
   height: 65px;
   box-shadow: 0px 0px 20px 0px rgb(0, 0, 0);
   gap: 16px;
-  width: 358px; /* Largura mínima */
-  padding: 0 20px; /* Espaçamento interno */
+  width: 358px;
+  padding: 0 20px;
+  transition: all 0.3s ease;
 }
 
 .nav-link {
   background-color: transparent;
   color: #ffffffd7;
+  border: none;
+  transition: color 0.3s ease, transform 0.1s ease, box-shadow 0.2s ease;
 }
+
 .nav-link:hover {
   color: #ffc763;
 }
+
 .nav-link:active {
   color: #ffc763;
+  transform: scale(0.95);
+  opacity: 0.7;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
+
 .textoNav {
   font-size: 16px;
+  margin: 0;
 }
