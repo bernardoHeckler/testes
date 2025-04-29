@@ -5,15 +5,16 @@
   transform: translateX(-50%);
   z-index: 1000;
   width: auto;
+  animation: fadeIn 0.5s ease-out forwards;
 }
 
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #28282975;
   border: 1px solid #383838;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(20px) !important;
+  background-color: #0a0a0a81;
   cursor: pointer;
   border-radius: 20px;
   margin: 0 16px 16px 16px;
@@ -34,6 +35,8 @@
 
 .nav-link:hover {
   color: #ffc763;
+  transform: translateY(-3px) scale(1.05);
+  animation: animacaoConteudo 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
 }
 
 .nav-link:active {
@@ -46,4 +49,24 @@
 .textoNav {
   font-size: 16px;
   margin: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) translateX(-50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) translateX(-50%);
+  }
+}
+
+@keyframes animacaoConteudo {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.95);
+  }
 }

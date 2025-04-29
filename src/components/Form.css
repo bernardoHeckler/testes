@@ -26,6 +26,7 @@ form {
   width: 100%;
   height: auto;
 }
+
 input,
 textarea {
   height: 55px;
@@ -34,9 +35,18 @@ textarea {
   background-color: #1e1e1f;
   border: 1px solid #383838;
   color: #9f9f9f;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
 }
+
 textarea {
   height: 122px;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #fcce68;
+  outline: none; /* Remove a borda padrão de foco */
+  box-shadow: 0 0 5px rgba(252, 206, 104, 0.5); /* Efeito de brilho */
 }
 
 .contato-section > .container > .linha {
@@ -54,19 +64,21 @@ textarea {
   border-radius: 10px;
   background: radial-gradient(circle at 0% 100%, #383838, #202022);
   border: 1px solid #383838;
-  border: 1px solid #383838;
   color: #fcce68;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: 1s;
+  transition: all 0.3s ease; /* Transição suave para todas as propriedades */
 }
+
 .btn-form:hover {
   background: radial-gradient(circle at 0% 100%, #383838, #202022);
   border: 1px solid #fcce68;
   color: #fcce68;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 1s;
+}
+
+.btn-form:active {
+  transform: scale(0.95); /* Efeito de "pressionar" */
+  opacity: 0.7;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra sutil ao clicar */
 }
