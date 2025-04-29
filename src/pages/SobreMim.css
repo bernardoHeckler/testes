@@ -19,6 +19,7 @@ section.SobreMim {
   flex-wrap: nowrap;
   justify-content: center;
   padding: 32px;
+  animation: fadeInSobre 0.5s ease-out;
 }
 
 .linha {
@@ -29,14 +30,17 @@ section.SobreMim {
   gap: 16px;
   padding-bottom: 16px;
 }
+
 .barra {
   width: 40px;
   height: 5px;
   background-color: #ffc763;
 }
+
 .descricao {
   color: #9f9f9f;
 }
+
 .coluna {
   display: flex;
   gap: 32px;
@@ -47,6 +51,7 @@ section.SobreMim {
   align-items: center;
   flex-direction: row;
 }
+
 section.informacao {
   display: flex;
   flex-direction: row;
@@ -57,7 +62,16 @@ section.informacao {
   border-radius: 20px;
   background: radial-gradient(circle at center, #232324 0%, #202022 100%);
   border: 1px solid #383838;
+  transition: all 0.3s ease;
 }
+
+section.informacao:hover {
+  transform: translateY(-3px);
+  background: radial-gradient(circle at 0% 100%, #383838, #202022);
+  border: 1px solid #fcce68;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .conteudo {
   display: flex;
   flex-direction: column;
@@ -67,12 +81,25 @@ section.informacao {
   gap: 16px;
   width: 100%;
 }
+
 .conteudo > img {
   width: 40px;
+  transition: transform 0.3s ease;
 }
+
+section.informacao:hover .conteudo > img {
+  transform: scale(1.1);
+}
+
 .tecnologiasImg {
   width: 80px;
+  transition: transform 0.3s ease;
 }
+
+.tecnologiasImg:hover {
+  transform: scale(1.1);
+}
+
 .text {
   display: flex;
   flex-direction: column;
@@ -81,6 +108,7 @@ section.informacao {
   align-items: center;
   gap: 20px;
 }
+
 .text > .descricao {
   text-align: center;
 }
@@ -94,6 +122,7 @@ section.informacao {
   gap: 20px;
   padding-left: 8px;
 }
+
 .retangulos {
   display: flex;
   width: 100%;
@@ -104,11 +133,12 @@ section.informacao {
   justify-content: space-evenly;
   gap: 8px;
 }
+
 .blocoMaior {
   padding: 16px;
   border-radius: 10px;
-
   background: radial-gradient(circle at center, #383838 0%, #121212 100%);
+  animation: animacaoConteudoSobre 0.5s ease-out;
 }
 
 .forma1 {
@@ -116,11 +146,35 @@ section.informacao {
   height: 16px;
   background: radial-gradient(circle at center, #383838 0%, #121212 100%);
 }
+
 .forma2 {
   width: 90%;
   height: 16px;
   background: radial-gradient(circle at center, #383838 0%, #121212 100%);
 }
+
 h2 {
   text-align: center;
+}
+
+@keyframes fadeInSobre {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes animacaoConteudoSobre {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
