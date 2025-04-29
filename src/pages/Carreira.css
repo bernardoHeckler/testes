@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: row;
   margin-bottom: 81px;
+  animation: fadeInCarreira 0.5s ease-out;
 }
 
 .career-section {
@@ -20,6 +21,7 @@
   justify-content: center;
   padding: 32px;
   gap: 16px;
+  transition: all 0.3s ease;
 }
 
 .section-header {
@@ -43,10 +45,12 @@
   border: 1px solid #383838;
   border-radius: 10px;
   z-index: 999;
+  transition: all 0.3s ease;
 }
 .icon-wrapper > img {
   width: 24px;
   height: 24px;
+  transition: transform 0.3s ease;
 }
 
 .section-icon {
@@ -95,7 +99,6 @@
   width: 6px;
   background: #ffc763;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(255, 199, 99, 0.2);
 }
 
 .item-title {
@@ -141,4 +144,30 @@
 }
 .skill > h3 {
   padding-top: 16px;
+}
+
+.icon-wrapper:hover img {
+  transform: scale(1.1);
+}
+
+@keyframes fadeInCarreira {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes animacaoConteudoCarreira {
+  from {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
